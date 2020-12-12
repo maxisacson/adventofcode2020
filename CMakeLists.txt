@@ -9,6 +9,7 @@ add_subdirectory(third_party/googletest)
 add_executable(app main.cpp)
 
 add_executable(test test.cpp
-    day1.cpp)
+    day1.cpp
+    day2.cpp)
 target_link_libraries(test gtest_main)
 
