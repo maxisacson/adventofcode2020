@@ -5,12 +5,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(third_party/googletest)
+add_subdirectory(third_party/fmt)
 
 add_executable(app main.cpp)
 
 add_executable(test test.cpp
     day1.cpp
     day2.cpp
-    day3.cpp)
-target_link_libraries(test gtest_main)
+    day3.cpp
+    day4.cpp)
+target_link_libraries(test gtest_main fmt::fmt)
 
