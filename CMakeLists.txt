@@ -14,6 +14,7 @@ add_executable(test test.cpp
     day2.cpp
     day3.cpp
     day4.cpp
-    day5.cpp)
+    day5.cpp
+    day6.cpp)
 target_link_libraries(test gtest_main fmt::fmt)
 
