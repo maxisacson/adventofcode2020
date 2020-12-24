@@ -12,7 +12,6 @@ add_subdirectory(third_party/googletest)
 add_subdirectory(third_party/fmt)
 
 add_executable(app main.cpp)
-
 add_executable(test test.cpp
     day1.cpp
     day2.cpp
@@ -26,6 +25,7 @@ add_executable(test test.cpp
     day10.cpp
     day11.cpp
     day12.cpp
-    day13.cpp)
-target_link_libraries(test gtest_main fmt::fmt)
+    day13.cpp
+    day14.cpp)
 
+target_link_libraries(test gtest_main fmt::fmt)
